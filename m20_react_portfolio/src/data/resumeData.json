@@ -1,0 +1,168 @@
+{
+  "experience": [
+    {
+      "company": "Tesla Motors Inc.",
+      "dates": "Oct 2019 - Present",
+      "title": "Automation Controls Technician IV",
+      "location": "Fremont, CA, USA",
+      "accomplishments": [
+        "Actively pursued and completed various complex projects from engineering at every opportunity.",
+        "Utilized multiple PLC programs to troubleshoot, make modifications, and add functionality to existing equipment.",
+        "The go-to technician for any critical system that had a major fault or was down for long periods of time.",
+        "Proficient in delivering comprehensive training to team members."
+      ]
+    },
+    {
+      "company": "Tesla Motors Inc.",
+      "dates": "Oct 2019 - Sep 2020",
+      "title": "Equipment Maintenance Technician II",
+      "location": "Fremont, CA, USA",
+      "accomplishments": [
+        "Troubleshot, diagnosed, and corrected hundreds of faults.",
+        "Learned the intricacies of multiple systems with no prior knowledge.",
+        "Collaborated with engineering to commission new equipment.",
+        "Monitored and analyzed recurring problems with various equipment."
+      ]
+    },
+    {
+      "company": "United States Navy",
+      "dates": "Dec 2010 - Oct 2018",
+      "title": "Electronics Technician",
+      "location": "Yokosuka & Sasebo, Japan",
+      "accomplishments": [
+        "Consistently scored up to 90% on over a dozen ship-wide certifications and inspections.",
+        "Maintained 3 radars and corrected over 25 major and minor system casualties.",
+        "Significantly increased calibration readiness of all 455 electronic test equipment units onboard.",
+        "Aggressively and thoroughly trained 47 personnel."
+      ]
+    },
+    {
+      "company": "Freelance",
+      "dates": "Jun 2005 - Dec 2010",
+      "title": "Front-End Web Developer",
+      "location": "Atlanta, GA, USA",
+      "accomplishments": [
+        "Designed, developed, and maintained several small business and school websites.",
+        "Created web content for various promotional advertisements."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "UC Berkeley Extension",
+      "program": "Full Stack Web Development Course",
+      "dates": "Apr 2023 - Oct 2023",
+      "details": [
+        "24-week, part-time web development boot camp.",
+        "Full stack curriculum includes HTML5, CSS3, JavaScript, jQuery, Bootstrap, Express.js, React.js, databases, MongoDB, Node.js, MySQL, Command Line, Git, and more.",
+        "Gain real-world experience through complex projects.",
+        "Build a professional portfolio that demonstrates your knowledge.",
+        "Benefit from a wide range of career services to be positioned for success in the job market.",
+        "Includes portfolio reviews, resume and social media profile support."
+      ]
+    },
+    {
+      "institution": "E and M Training Course",
+      "program": "Siemens TIA Portal Software Development I and II",
+      "dates": "Dec 2022 (Two Weeks)",
+      "details": [
+        "Two-part instructor-led, hands-on course using TIA Portal software to integrate PLC, HMI, and Variable Frequency Drive (VFD) controls.",
+        "Learned how to program in Ladder Logic, Function Block Diagrams, Sequential Function Charts, and Structured Text."
+      ]
+    },
+    {
+      "institution": "US Navy Training Schools",
+      "program": "Certificates, Electronics Technology",
+      "dates": "Dec 2010 - Oct 2018",
+      "details": [
+        "Basic Training (9 Weeks)",
+        "Apprentice Technical Training (3 Months)",
+        "Electronics Technician 'A' School (4 Months)",
+        "AIMS MKXII IFF Air Traffic Control Radar Beacon System 'C' School (3 Months)",
+        "UPX-29 IFF Interrogator System 'C' School (5 Weeks)",
+        "SINCGARS Radio 'C' School (2 Weeks)",
+        "SPN-41 Aircraft Instrument Landing Radar System 'C' School (5 Weeks)",
+        "SPN-43 Air Marshaling Radar System 'C' School (2 Months)",
+        "SPN-35 Precision Approach and Landing Radar System 'C' School (2 Months)"
+      ]
+    },
+    {
+      "institution": "Norcross High School",
+      "program": "High School Diploma",
+      "dates": "Aug 2001 - May 2005",
+      "details": []
+    }
+  ],
+  "skills": [
+    "Root Cause Analysis",
+    "AI Prompt Engineering",
+    "Test-Driven Development",
+    "Responsive Web Design",
+    "Interpersonal Communication",
+    "Financial Planning",
+    "Team Building",
+    "Web Design",
+    "Teamwork",
+    "Supervisory Skills",
+    "Military Training",
+    "Program Management",
+    "Inventory Management",
+    "Continuous Improvement"
+  ],
+  "software": [
+    "Microsoft PowerPoint",
+    "Microsoft Excel",
+    "Microsoft Word",
+    "Insomnia",
+    "Apollo Server",
+    "MongoDB Compass",
+    "Microsoft Visual Studio Code",
+    "Git Bash",
+    "GitHub",
+    "Ignition",
+    "Siemens Starter",
+    "SynQ",
+    "Galil Tools",
+    "Rockwell Studio 5000",
+    "Siemens Step7",
+    "Codesys",
+    "Movitools Motion Studio",
+    "Siemens TIA Portal",
+    "Sick SOPAS",
+    "Prosoft RadioLinx IH Browser"
+  ],
+  "programming": [
+    "Handlebars JS",
+    "Sequelize JS",
+    "JSON",
+    "APIs",
+    "Jest",
+    "jQuery",
+    "MySQL",
+    "Inquirer JS",
+    "Bootstrap",
+    "MongoDB",
+    "Mongoose",
+    "Express JS",
+    "React JS",
+    "Node JS",
+    "CSS",
+    "HTML",
+    "Bulma CSS",
+    "Tailwind CSS",
+    "Material UI",
+    "Materialize CSS",
+    "Python",
+    "JavaScript"
+  ],
+  "technician": [
+    "PLC Troubleshooting",
+    "Electronic Test Equipment",
+    "Electronics Troubleshooting",
+    "Electro-Mechanical Systems",
+    "Maintenance and Repair",
+    "Preventative Maintenance",
+    "Corrective Maintenance",
+    "Schematics"
+  ]
+}

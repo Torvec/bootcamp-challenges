@@ -1,0 +1,33 @@
+{
+  "name": "m10_svg_logo_maker",
+  "description": "A UC Berkley Full Stack Web Development Bootcamp Week 10 Challenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Torvec/m10_svg_logo_maker.git"
+  },
+  "keywords": [
+    "svg",
+    "jest",
+    "inquirer"
+  ],
+  "author": "Edward Von Schondorf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Torvec/m10_svg_logo_maker/issues"
+  },
+  "homepage": "https://github.com/Torvec/m10_svg_logo_maker#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  },
+  "devDependencies": {
+    "jest": "^29.6.0"
+  }
+}

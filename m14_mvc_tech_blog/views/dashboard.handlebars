@@ -1,0 +1,117 @@
+{{!-- DASHBOARD PAGE --}}
+
+
+<section class="section grey darken-4 pageHero">
+    <div class="container">
+        <h1 class="grey-text text-lighten-2 center-align logoFont">My Dashboard</h1>
+    </div>
+</section>
+
+<section class="section container">
+    <p class="center-align">
+        <a href="#newPostModal" class="waves-effect waves-light btn-large modal-trigger teal">
+            <i class="material-icons right">post_add</i>New Post
+        </a>
+    </p>
+</section>
+
+<div id="newPostModal" class="modal">
+    <div class="modal-content grey lighten-2">
+        <h4 class="center-align black-text">Create a New Post</h4>
+        <div class="row">
+            <form class="col s12" action="/api/blog/newpost" method="post">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="newpost_title" name="title" type="text" class="validate" required>
+                        <label for="newpost_title">Title</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="newpost_content" name="content" class="materialize-textarea" required></textarea>
+                        <label for="newpost_content">Content</label>
+                    </div>
+                </div>
+                <div class="modal-footer grey lighten-2">
+                    <button type="submit" class="waves-effect waves-light btn teal">
+                        <i class="material-icons right">send</i>Submit
+                    </button>
+                    <button type="button" class="modal-close waves-effect waves-light btn teal">
+                        <i class="material-icons right">cancel</i>Cancel
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<section class="section container">
+    {{#each posts as |post|}}
+        <h3><a class="teal-text" href="/post/{{post.id}}">{{post.title}}</a></h3>
+        <p>{{post.formattedDate}}</p>
+        <p class="flow-text">{{post.content}}</p>
+        <p class="right-align">
+            <a href="#editPostModal{{post.id}}" class="waves-effect waves-light btn modal-trigger teal">
+                <i class="material-icons right">edit</i>Edit
+            </a>
+            <a href="#deletePostModal{{post.id}}" class="waves-effect waves-light btn modal-trigger teal">
+                <i class="material-icons right">delete</i>Delete
+            </a>
+        </p>
+
+        <div id="editPostModal{{post.id}}" class="modal">
+            <div class="modal-content grey lighten-2">
+                <h4 class="center-align black-text">Edit Post</h4>
+                <div class="row">
+                    <form class="col s12">
+                        <input type="hidden" id="postId" value="{{post.id}}">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="editpost_title" name="title" type="text" class="validate" value="{{post.title}}" data-post-id="{{post.id}}" required>
+                                <label for="editpost_title">Title</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="editpost_content" name="content" class="materialize-textarea" data-post-id="{{post.id}}" required>{{post.content}}</textarea>
+                                <label for="editpost_content">Content</label>
+                            </div>
+                        </div>
+                        <div class="modal-footer grey lighten-2">
+                            <button type="button" class="waves-effect waves-light btn teal editPostBtn" data-post-id="{{post.id}}">
+                                <i class="material-icons right">send</i>Submit
+                            </button>
+                            <button type="button" class="modal-close waves-effect waves-light btn teal">
+                                <i class="material-icons right">cancel</i>Cancel
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="deletePostModal{{post.id}}" class="modal grey lighten-2">
+            <div class="modal-content">
+                <h4 class="center-align black-text">Are you Sure you want to Delete this post?</h4>
+                <div class="row">
+                    <form class="col s12 m8 offset-m2 l6 offset-l3">
+                        <input type="hidden" id="postId" value="{{post.id}}">
+                        <div class="row">
+                            <div class="input-field col s6 center-align">
+                                <button type="submit" class="waves-effect waves-light btn-large teal deletePostBtn" data-post-id="{{post.id}}">
+                                    <i class="material-icons right">check_circle</i>Yes
+                                </button>
+                            </div>
+                            <div class="input-field col s6 center-align">
+                                <button type="button" class="modal-close waves-effect waves-light btn-large teal">
+                                    <i class="material-icons right">cancel</i>No
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+</section>
+

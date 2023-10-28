@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>
+        <div id="search">
+            <input id="inputSearch" type="text" placeholder="Enter City Name" required>
+            <button id="searchBtn">Search</button>
+        </div>
+    </header>
+    <main>
+        <div id="searchHistory">
+            <h2>History</h2>
+            <!-- SEARCH HISTORY FROM LOCAL STORAGE -->
+        </div>
+        <div id="weather">
+            <section id="currentWeather">
+                <!-- CURRENT WEATHER FROM OPENWEATHER ONE CALL 3.0 API HERE -->
+            </section>
+            <section id="forecast">
+                <!-- 5 DAY FORECAST FROM OPENWEATHER ONE CALL 3.0 API HERE -->
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>An OpenWeather App - <a href="https://openweathermap.org/api/one-call-3" target="_blank">One Call API 3.0</a> and <a href="https://openweathermap.org/api/geocoding-api" target="_blank">Geocoding API</a></p>
+        <p>A UC Berkley Full Stack Web Development Bootcamp Project</p>
+        <p>Created June 2023 by Edward Von Schondorf</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js" integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
+    <!--ADVANCED FORMATTING PLUGIN FOR DAYJS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.3/plugin/advancedFormat.min.js" integrity="sha512-MGC6Za7V8BU0nL3GVjgssHGIZkIMM6A+tcnxqwkdDASdOnyHwmCwyoVfxSYDxiznl4DDYeZP0Jn0p5MW+r4Rnw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

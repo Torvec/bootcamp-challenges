@@ -1,0 +1,28 @@
+{{!-- INDIVDUAL BLOG POST PAGE --}}
+
+
+<section class="section container">
+
+    <h3 class="teal-text">{{post.title}}</h3>
+    <p>By <span class="grey darken-3 green-text">{{post.user.username}}</span></p>
+    <p>{{post.formattedDate}}</p>
+    <p class="flow-text">{{post.content}}</p>
+    {{> addComment}}
+    <h4>Comments</h4>
+    {{#each comments as |comment|}}
+        <div class="col s12 hoverable">
+            <div class="card horizontal grey darken-4">
+                <div class="card-image">
+                    <img src="https://picsum.photos/110?random={{comment.id}}">
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <p><span class="flow-text">{{comment.user.username}}</span> <span class="right">{{comment.formattedDate}}</span></p>
+                        <p>{{comment.content}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{/each}}
+      
+</section>

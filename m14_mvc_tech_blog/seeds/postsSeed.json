@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "title": "Understanding Web Development",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet facilisis elit. Fusce et nisi nec metus porttitor vulputate. Nullam quis quam sed nulla lacinia iaculis. Vivamus fermentum elit nec ante interdum, id tincidunt metus pulvinar. Sed aliquam facilisis nisl, vel finibus justo semper quis.",
+    "author_id": 1,
+    "created_at": "2023-01-01T00:00:00Z"
+  },
+  {
+    "id": 2,
+    "title": "Introduction to Node.js",
+    "content": "Node.js is a JavaScript runtime...Integer auctor, sapien non tincidunt lacinia, metus turpis sodales nisi, vel venenatis urna sapien at ligula. Curabitur convallis sapien eget leo dignissim, eu facilisis tellus malesuada. Cras at sapien vitae lorem vehicula pellentesque. Maecenas sit amet bibendum orci, nec facilisis dolor. Fusce tincidunt dapibus erat, eu malesuada metus fringilla nec.",
+    "author_id": 2,
+    "created_at": "2023-02-02T00:00:00Z"
+  },
+  {
+    "id": 3,
+    "title": "Exploring ReactJS",
+    "content": "ReactJS is a popular front-end framework...Vivamus at semper dui. Aenean et urna ut nunc bibendum dapibus. Sed interdum, ligula nec tincidunt tristique, felis orci vehicula ex, id tincidunt purus purus eget libero. Donec eget eros urna. Suspendisse hendrerit quis lorem a posuere. Praesent pharetra, nisl in fermentum posuere, turpis ipsum vestibulum nisl, eget pellentesque justo massa ut ipsum.",
+    "author_id": 2,
+    "created_at": "2023-02-15T00:00:00Z"
+  },
+  {
+    "id": 4,
+    "title": "The Basics of RESTful APIs",
+    "content": "An API (Application Programming Interface)...Nulla facilisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut ut ex tortor. Sed dictum a odio et volutpat. Sed sodales malesuada arcu, nec bibendum lacus bibendum nec. Curabitur et quam vel orci cursus venenatis id nec arcu. Nam luctus rhoncus ipsum, in volutpat elit rhoncus a.",
+    "author_id": 3,
+    "created_at": "2023-03-03T00:00:00Z"
+  },
+  {
+    "id": 5,
+    "title": "Why TypeScript?",
+    "content": "TypeScript is a superset of JavaScript...Sed nec lorem volutpat, aliquam leo eget, euismod sem. Ut ac euismod neque. Nulla ac eleifend sem. Pellentesque volutpat, ligula a ullamcorper tristique, augue urna maximus ante, nec varius nulla nulla ut est. Curabitur nec mauris metus. Quisque a massa quis metus interdum laoreet. Maecenas eu semper libero. Donec bibendum quam eget dolor vehicula, id facilisis quam bibendum.",
+    "author_id": 4,
+    "created_at": "2023-03-15T00:00:00Z"
+  },
+  {
+    "id": 6,
+    "title": "Vue.js for Beginners",
+    "content": "Vue.js is another front-end framework...Nunc nec varius orci. In a efficitur urna. Cras consequat lectus at vehicula faucibus. Morbi feugiat urna nec sem lacinia, non placerat velit vehicula. Phasellus eget arcu fermentum, sodales nulla eget, congue erat. Integer feugiat vel quam vitae sodales. Sed venenatis sapien quis enim imperdiet, non commodo purus congue.",
+    "author_id": 1,
+    "created_at": "2023-04-01T00:00:00Z"
+  },
+  {
+    "id": 7,
+    "title": "Getting Started with AWS",
+    "content": "Amazon Web Services (AWS) is a cloud platform...Mauris vel nulla non lectus consectetur malesuada eu at velit. Etiam id suscipit ex. Aliquam id pulvinar orci, eget dapibus enim. Duis feugiat ultrices urna, a lacinia purus lacinia ac. Sed eleifend, lectus eu dictum porttitor, diam felis blandit lacus, quis dictum massa elit id arcu. Aenean quis bibendum elit.",
+    "author_id": 3,
+    "created_at": "2023-05-01T00:00:00Z"
+  },
+  {
+    "id": 8,
+    "title": "GraphQL vs REST",
+    "content": "GraphQL and REST are both API technologies...Ut imperdiet dolor in nisl mattis, a cursus odio volutpat. Fusce ut erat semper, efficitur felis in, iaculis justo. Vestibulum eget ante porttitor, varius metus id, vulputate libero. Praesent accumsan justo et tortor dignissim, vel consectetur dolor malesuada. Integer tempus est a metus efficitur, quis facilisis elit dictum.",
+    "author_id": 5,
+    "created_at": "2023-05-15T00:00:00Z"
+  },
+  {
+    "id": 9,
+    "title": "CSS Flexbox and Grid",
+    "content": "Flexbox and Grid are modern CSS layout systems...Aliquam tincidunt scelerisque ante, eget blandit dui facilisis quis. Sed in nibh vehicula, facilisis est sit amet, facilisis nulla. Vivamus facilisis mauris sit amet diam elementum, vel commodo elit malesuada. Fusce mattis augue sit amet nulla luctus, id fringilla turpis commodo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+    "author_id": 4,
+    "created_at": "2023-06-01T00:00:00Z"
+  },
+  {
+    "id": 10,
+    "title": "Automating with Python",
+    "content": "Python is a versatile language for automation...Vestibulum dapibus ligula sed nibh pellentesque, in mollis arcu venenatis. Curabitur ac felis sed mauris sagittis tincidunt. Aenean non nulla metus. Donec bibendum erat odio, nec rhoncus elit feugiat eu. Sed dignissim lorem a nisl finibus, quis commodo dui suscipit. Etiam a libero in quam interdum dictum. Quisque in mi quam.",
+    "author_id": 5,
+    "created_at": "2023-07-01T00:00:00Z"
+  }
+]

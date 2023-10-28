@@ -1,0 +1,77 @@
+{{!-- MAIN HANDLEBARS TEMPLATE --}}
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="/css/materialize.min.css">
+    <title>MVC Tech Blog by Edward Von Schondorf</title>
+    </head>
+    <body>
+        <header>
+            <div class="navbar-fixed">
+                <nav class="gradientGreenTeal">
+                    <div class="nav-wrapper container">
+                        <a href="/" class="brand-logo black-text logoFont">MVC Tech Blog</a>
+                        <a href="#" data-target="mobile" class="sidenav-trigger black-text"><i class="material-icons">menu</i></a>
+                        <ul class="right hide-on-med-and-down">
+                            {{#if signed_in}}
+                                <li><a href="/" class="black-text"><i class="material-icons left">home</i>Home</a></li>
+                                <li><a href="/dashboard" class="black-text"><i class="material-icons left">library_books</i>My Dashboard</a></li>
+                                <li><a href="/signout" class="black-text" id="signoutLink"><i class="material-icons left">logout</i>Sign Out</a></li>
+                            {{else}}
+                                <li><a href="/" class="black-text"><i class="material-icons left">home</i>Home</a></li>
+                                <li><a href="/dashboard" class="black-text"><i class="material-icons left">library_books</i>My Dashboard</a></li>
+                                <li><a href="/signin" class="black-text"><i class="material-icons left">login</i>Sign In</a></li>
+                            {{/if}}
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <ul class="sidenav green darken-1" id="mobile">
+                {{#if signed_in}}
+                    <li><a href="/"><i class="material-icons left">home</i>Home</a></li>
+                    <li><a href="/dashboard"><i class="material-icons left">library_books</i>My Dashboard</a></li>
+                    <li><a href="/signout" id="signoutLinkMobile"><i class="material-icons left">logout</i>Sign Out</a></li>
+                {{else}}
+                    <li><a href="/"><i class="material-icons left">home</i>Home</a></li>
+                    <li><a href="/dashboard"><i class="material-icons left">library_books</i>My Dashboard</a></li>
+                    <li><a href="/signin"><i class="material-icons left">login</i>Sign In</a></li>
+                {{/if}}
+            </ul>
+
+        </header>
+
+        <main class="grey darken-4 white-text">
+            {{{ body }}}
+        </main>
+
+        <footer class="page-footer gradientTealGreen">
+            <section class="section container">
+                <p class="grey-text text-lighten-4">
+                    Created by <a class="yellow-text text-lighten-4" href="https://torvec.github.io/m2_my_portfolio/" target="_blank">Edward Von Schondorf</a>
+                </p>
+                <p class="grey-text text-lighten-4">
+                    Created September 2023 for the UC Berkley Full Stack Web Development Bootcamp
+                </p>
+            </section>
+            <section class="footer-copyright">
+                <div class="container">
+                © 2023 MVC Tech Blog
+                <a class="yellow-text text-lighten-4 right" href="#" target="_top">Top</a>
+                </div>
+            </section>
+        </footer>
+
+        <script src="/js/materialize.min.js"></script>{{!-- Materialize JS scripts --}}
+        <script src="/js/signoutEvent.js"></script>{{!-- Handles the event listener for signing out --}}
+        <script src="js/blogPostEvent.js"></script>{{!-- Handles the event listeners for editing/deleting blog posts --}}
+
+    </body>
+</html>

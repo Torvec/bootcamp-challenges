@@ -1,0 +1,227 @@
+:root {
+    --indigo: #1a237e ;
+    --blue: #2962ff;
+    --lightblue: #bbdefb;
+    --lightgray: #eceff1;
+    --red: #ff4444;
+    --green: #00C851;
+    --black: #212121;
+    --white: #fafafa;
+    --width: 90%;
+    --maxwidth: 800px;
+    --halfmaxwidth: 400px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--lightgray);
+    font-family: sans-serif;
+    font-size: 62.5%; /* 1rem = 10px */
+    color: var(--black);
+}
+
+header, main, footer {
+    width: var(--width);
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: var(--white);
+}
+
+/* SITE HEADER STYLES */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+    background-color: var(--lightgray);
+}
+
+#score, #timer, #hiScore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.25rem;
+    font-family: 'Monda', sans-serif;
+    width: 33%;
+    color: var(--blue);
+}
+
+#scoreValue, #timerValue, #hiScoreValue {
+    font-size: 3.0rem;
+    font-family: 'Squada One', monospace;
+    color: var(--indigo);
+}
+
+/* MAIN CONTENT STYLES */
+
+main {
+    border-radius: 20px 20px 0 0;
+    padding: 2em 0;
+}
+
+h1 {
+    font-size: 3.0rem;
+    text-align: center;
+    font-weight: bold;
+    margin: 1em 0;
+    color: var(--indigo);
+}
+
+h2 {
+    font-size: 2.0rem;
+    font-weight: bold;
+    margin: 2em auto;
+    color: var(--indigo);
+    width: var(--width);
+}
+
+p {
+    line-height: 1.5;
+    font-size: 1.25rem;
+    margin: 0 auto;
+    width: var(--width);
+    max-width: var(--maxwidth);
+}
+
+.btnGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 80%;
+    max-width: var(--halfmaxwidth);
+    margin: 10.0em auto;
+}
+
+button {
+    font-size: 1.25rem;
+    padding: 0.75em 0;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+button:hover, #submitScoreBtn:hover {
+    opacity: 80%;
+}
+
+button:active, #submitScoreBtn:active {
+    background-color: var(--indigo);
+}
+
+/* QUESTIONS STYLES */
+
+button.answerBtn {
+    padding: 1.0em;
+}
+
+#correctMsg, #incorrectMsg {
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5em;
+    max-width: var(--maxwidth);
+    margin: 0 auto;
+    color: var(--white);
+}
+
+#correctMsg {
+    background-color: var(--green);
+}
+
+#incorrectMsg {
+    background-color: var(--red);
+}
+
+/* SUBMIT SCORE STYLES */
+
+form {
+    padding: 5em 0 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--width);
+    max-width: var(--maxwidth);
+    margin: 0 auto;
+}
+
+input {
+    padding: 0.75em;
+    border-radius: 10px 0 0 10px;
+    border: 2px solid var(--blue);
+    width: 60%;
+    font-size: 1.25rem;
+}
+
+input:focus {
+    outline: none;
+    background-color: var(--lightgray);
+}
+
+#submitScoreBtn {
+    background-color: var(--blue);
+    border-radius: 0 10px 10px 0;
+    border: 2px solid var(--blue);
+    width: 40%;
+}
+
+/* SCOREBOARD STYLES */
+
+#scoreList {
+    font-size: 1.6rem;
+    margin: 0 auto 1em;
+    padding: 0;
+    max-width: 400px;
+}
+
+#scoreList li {
+    display: flex;
+}
+
+#scoreList li:hover {
+    border-left: 4px solid var(--lightblue);
+    border-right: 4px solid var(--lightblue);
+}
+
+.scoreList_Initials, .scoreList_Score {
+    width: 50%;
+    padding: 0.5em 1.0em;
+}
+
+.scoreList_Initials {
+    font-family: 'Monda', sans-serif;
+    text-align: center;
+    color: var(--blue);
+}
+
+.scoreList_Score {
+    font-family: 'Squada One', monospace;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.75rem;
+    color: var(--indigo);
+}
+
+/* SITE FOOTER STYLES */
+
+footer {
+    padding: 3.0em 0;
+    margin-bottom: 3.0em;
+    background-color: var(--lightblue);
+    border-radius: 0 0 20px 20px;
+    border-top: 4px solid var(--indigo);
+}
+
+footer p {
+    color: var(--indigo);
+    font-size: 1.0rem;
+    margin-bottom: 1.0em;
+    text-align: center;
+}

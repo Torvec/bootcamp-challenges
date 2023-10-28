@@ -1,0 +1,23 @@
+{{!-- ADD COMMENT PARTIAL --}}
+
+
+<div class="row">
+    <form class="col s12" action="/api/blog/comment" method="POST">
+        <div class="row">
+            <div class="input-field col s12">
+                <textarea name="content" id="content" class="materialize-textarea white-text" required></textarea>
+                <label for="content">New Comment</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s6">
+                <input type="hidden" name="post_id" value="{{post.id}}">
+            </div>
+            <div class="col s6 right-align">
+                <button class="btn waves-effect waves-light" type="submit">Submit
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>

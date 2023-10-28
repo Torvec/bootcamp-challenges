@@ -1,0 +1,312 @@
+/*MY PORTFOLIO STYLES - EDWARD VON SCHONDORF - MAY 2023*/
+
+:root {
+    --black: rgb(40, 40, 40);
+    --white: rgb(240, 240, 240);
+    --orange: rgb(245, 120, 25);
+    --orangeLight: rgb(255, 150, 70);
+    --orangeDark: rgb(200, 90, 35);
+    --red: rgb(255, 36, 0);
+    --gray: rgb(130, 130, 130);
+    --grayLight: rgb(150, 150, 150);
+    --hdrFontFam: 'Poppins', sans-serif;
+    --mainFontFam: 'Roboto-mono', monospace;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;/* 10px */
+}
+
+body {
+    font-family: var(--mainFontFam);
+}
+
+h2, h3, h4 {
+    margin-bottom: 1.0em;
+    font-family: var(--hdrFontFam);
+}
+
+
+h2 {
+    font-size: 4.0rem; /* 40px */
+    text-align: center;
+}
+
+h3 {
+    font-size: 3.0rem; /* 30px */
+}
+
+h4 {
+    font-size: 2.5rem; /* 25px */
+    font-weight: bold;
+}
+
+p, label {
+    line-height: 1.5;
+    font-size: 2.0rem; /* 20px */
+    max-width: 75ch;
+    margin-bottom: 1.0em;
+}
+
+img {
+    max-width: 100%;
+    margin-bottom: 2rem;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: var(--orange);
+}
+
+a:hover, a:focus {
+    color: var(--white);
+}
+
+a:active {
+    color: var(--orangeLight);
+}
+
+/*SITE HEADER STYLES*/
+
+header {
+    position: sticky;
+    top: 0;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--black);
+    color: var(--white);
+    border-bottom: 2px solid var(--orange);
+    z-index: 100; /* make sure header is on top of everything else */
+}
+
+h1 .myName {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: var(--white);
+    font-family: var(--hdrFontFam);
+}
+
+h1 .tagLine {
+    font-family: var(--FontFam);
+    color: var(--orange);
+    font-size: 2.0rem;
+    font-weight: 300;
+}
+
+nav {
+    font-size: 2.0rem; /* 20px */
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* SITE MAIN CONTENT STYLES*/
+
+#hero {
+    /* BACKGROUND IMAGE PROVIDED BY UNSPLASH.COM AT https://unsplash.com/photos/y6NyYpl89JM */
+    background-color: var(--orange);
+    background-image: url(../img/emerson-peters-y6NyYpl89JM-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-bottom: 2px solid var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#hero .content {
+    background-color: rgba(255, 255, 255, .5);
+    padding: 2%;
+    max-width: 1000px;
+}
+
+/* ABOUT ME SECTION */
+
+#about {
+    padding: 4%;
+    background-color: var(--gray);
+    border-bottom: 2px solid var(--black);
+}
+
+#about .content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#about .splitContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 0;
+    gap: 2rem;
+}
+
+#about img {
+    width: 50%;
+    border-radius: 6px;
+    box-shadow: 5px 5px 5px var(--black);
+}
+
+/*PORTFOLIO SECTION STYLES*/
+
+#portfolio {
+    padding: 4%;
+    background-color: var(--orange);
+    border-bottom: 2px solid var(--black);
+}
+
+#portfolio .content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#portfolio .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex: 1;
+    gap: 1rem;
+}
+
+#portfolio .projectCard {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    border-radius: 6px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 5px 5px 5px var(--orangeDark);
+}
+
+#portfolio .projectCard:hover {
+    opacity: 0.95;
+}
+
+/*CONTACT SECTION STYLES*/
+
+#contact {
+    background-color: var(--grayLight);
+    padding: 4%;
+}
+
+#contact .content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+form {
+    background-color: var(--white);
+    border-radius: 6px;
+    box-shadow: 10px 10px 6px 0px rgba(90,90,90,1);
+    max-width: 1000px;
+    padding: 2%;
+}
+
+label {
+    display: block;
+    margin-bottom: 1em;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 2%;
+    margin-bottom: 2%;
+    border-radius: 6px;
+    border-style: none;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    background-color: var(--orange);
+    border-radius: 6px;
+    border-style: none;
+    padding: 2%;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+button:hover {
+    color: var(--white);
+}
+
+button:active {
+    color: var(--black);
+    background-color: var(--red);
+}
+
+/* SITE FOOTER STYLES */
+
+footer {
+    background-color: var(--black);
+    padding: 1% 2%;
+    color: var(--white);
+    border-top: 2px solid var(--orange);
+}
+
+footer .content {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.0rem;
+    margin-bottom: 1.0em;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    nav ul {
+        gap: 8rem;
+    }
+
+    #hero .content {
+        border-radius: 6px;
+    }
+
+    #about .splitContent {
+        flex-direction: row;
+    }
+    #portfolio .projects {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    #portfolio .projects .projectCard {
+        max-width: 30%;
+    }
+    footer ul {
+        justify-content: flex-start;
+        gap: 6.0em;
+    }
+}
