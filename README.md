@@ -1,9 +1,9 @@
 # Bootcamp Challenges
-All of my UC Berkeley Bootcamp Challenges consolidated under one repo.
+All of my UC Berkeley Full Stack Web Development Bootcamp Challenges consolidated under one big monorepo.
 
 ## GitHub Pages
 
-Visit the GitHub pages link to see website: [Bootcamp Challenges](https://torvec.github.io/bootcamp-challenges/)
+Visit the GitHub pages site to see all of the deployments (Under Development): [Bootcamp Challenges](https://torvec.github.io/bootcamp-challenges/)
 
 ## Table of Contents
 - [Module 00: Pre-Work Study Guide](#module-00-pre-work-study-guide)
