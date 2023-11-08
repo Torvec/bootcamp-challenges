@@ -164,7 +164,7 @@ The week 10 challenge was to create an SVG logo maker using NodeJS with the inqu
 
 ![Site Screenshot](./assets/img/expressjsNoteTaker.png)
 
-[Heroku Deployment](https://serene-atoll-77959-f9fa0148df22.herokuapp.com/)
+#### [Heroku Deployment](https://young-wave-89443-5b166d2a064e.herokuapp.com/)
 
 The week 11 challenge was to create a note taking application using Express.js for the back end and connecting it to an already created front-end.
 
@@ -217,7 +217,7 @@ The week 13 challenge was to create a back end for an e-commerce site using expr
 
 ![Site Screenshot](./assets/img/mvcTechBlog.png)
 
-[Heroku Deployment](https://obscure-badlands-14784-588733df30d2.herokuapp.com/)
+#### [Heroku Deployment](https://obscure-badlands-14784-588733df30d2.herokuapp.com/)
 
 The week 14 challenge was to create a tech blog using the MVC paradigm. 
 
@@ -264,7 +264,7 @@ The week 18 challenge was to create a back end for a social networking API using
 
 ![Site Screenshot](./assets/img/pwaTextEditor.png)
 
-[Heroku Deployment](https://protected-everglades-54484-89ec2b86b857.herokuapp.com/)
+#### [Heroku Deployment](https://secret-shore-93853-24e6565e7438.herokuapp.com/)
 
 The week 19 challenge was to Progressive Web App (PWA) text editor
 
