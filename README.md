@@ -217,7 +217,7 @@ The week 13 challenge was to create a back end for an e-commerce site using expr
 
 ![Site Screenshot](./assets/img/mvcTechBlog.png)
 
-[Heroku Deployment](https://torvec-tech-blog-c9896c320b63.herokuapp.com/)
+[Heroku Deployment](https://obscure-badlands-14784-588733df30d2.herokuapp.com/)
 
 The week 14 challenge was to create a tech blog using the MVC paradigm. 
 
