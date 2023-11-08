@@ -5,64 +5,80 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My UC Berkeley Bootcamp Challenges</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        img {
+            width: 2rem;
+            height: 2rem;
+            margin-left: 0.5rem;
+        }
+        li {
+            list-style-type: none;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
     <main>
         <h1>My UC Berkeley Bootcamp Challenges</h1>
-        <ul>
-            <li>
-                <a href="./m00_prework_study_guide/" target="_blank">Pre-Work Study Guide</a>
-            </li>
-            <li>
-                <a href="./m01_horiseon_refactor/" target="_blank">Horiseon Refactor</a>
-            </li>
-            <li>
-                <a href="./m02_my_portfolio/" target="_blank">My Portfulio (Portfolio v1)</a>
-            </li>
-            <li>
-                <a href="./m03_password_generator/" target="_blank">Password Generator</a>
-            </li>
-            <li><a href="./m04_coding_quiz/" target="_blank">Coding Quiz</a></li>
-            <li>
-                <a href="./m05_workday_scheduler/" target="_blank">Workday Scheduler</a>
-            </li>
-            <li>
-                <a href="./m06_weather_dashboard/" target="_blank">Weather Dashboard</a>
-            </li>
-            <li>
-                <a href="https://youtu.be/GUlMvpk-Ono" target="_blank">README Generator</a>
-            </li>
-            <li>
-                <a href="https://youtu.be/CGi1bugTEi8" target="_blank">SVG Logo Maker</a>
-            </li>
-            <li>
-                <a href="https://young-wave-89443-5b166d2a064e.herokuapp.com/" target="_blank">Express.js Note
-                    Taker</a>
-            </li>
-            <li>
-                <a href="https://youtu.be/dKM0UAyHzxY" target="_blank">MySQL Employee Tracker</a>
-            </li>
-            <li>
-                <a href="https://youtu.be/t5qnrDMxy6Q" target="_blank">ORM E-Commerce Back End</a>
-            </li>
-            <li>
-                <a href="https://obscure-badlands-14784-588733df30d2.herokuapp.com/" target="_blank">MVC Tech Blog</a>
-            </li>
-            <li>
-                <a href="https://youtu.be/KsAnFe4RiYA" target="_blank">NoSQL Social Network API</a>
-            </li>
-            <li>
-                <a href="https://secret-shore-93853-24e6565e7438.herokuapp.com/" target="_blank">PWA Text
-                    Editor</a>
-            </li>
-            <li>
-                <a href="https://edward-vonschondorf.dev/" target="_blank">React Portfolio (Portfolio v2)</a>
-            </li>
-            <li><a href="#!" target="_blank">MERN Book Search Engine</a></li>
-            <li><a href="#!" target="_blank">Redux Store (Extra Credit)</a></li>
-        </ul>
+        <ul id="link-list"></ul>
+        <h2>CURRENTLY UNDER DEVELOPMENT</h2>
     </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const links = [
+                { link: "./m00_prework_study_guide/", label: "Pre-Work Study Guide", deployment: "github" },
+                { link: "./m01_horiseon_refactor/", label: "Horiseon Refactor", deployment: "github" },
+                { link: "./m02_my_portfolio/", label: "My Portfulio (Portfolio v1)", deployment: "github" },
+                { link: "./m03_password_generator/", label: "Password Generator", deployment: "github" },
+                { link: "./m04_coding_quiz/", label: "Coding Quiz", deployment: "github" },
+                { link: "./m05_workday_scheduler/", label: "Workday Scheduler", deployment: "github" },
+                { link: "./m06_weather_dashboard/", label: "Weather Dashboard", deployment: "github" },
+                { link: "https://youtu.be/GUlMvpk-Ono", label: "README Generator", deployment: "youtube" },
+                { link: "https://youtu.be/CGi1bugTEi8", label: "SVG Logo Maker", deployment: "youtube" },
+                { link: "https://young-wave-89443-5b166d2a064e.herokuapp.com/", label: "Express.js Note Taker", deployment: "heroku" },
+                { link: "https://youtu.be/dKM0UAyHzxY", label: "MySQL Employee Tracker", deployment: "youtube" },
+                { link: "https://youtu.be/t5qnrDMxy6Q", label: "ORM E-Commerce Back End", deployment: "youtube" },
+                { link: "https://obscure-badlands-14784-588733df30d2.herokuapp.com/", label: "MVC Tech Blog", deployment: "heroku" },
+                { link: "https://youtu.be/KsAnFe4RiYA", label: "NoSQL Social Network API", deployment: "youtube" },
+                { link: "https://secret-shore-93853-24e6565e7438.herokuapp.com/", label: "PWA Text Editor", deployment: "heroku" },
+                { link: "https://edward-vonschondorf.dev/", label: "React Portfolio (Portfolio v2)", deployment: "cloudflare" },
+                { link: "https://github.com/Torvec/bootcamp-challenges/tree/main/m21_mern_book_search_engine", label: "MERN Book Search Engine", deployment: "github" }, // UNDER DEVELOPMENT
+                { link: "https://github.com/Torvec/bootcamp-challenges/tree/main/m22_redux_store", label: "Redux Store (Extra Credit)", deployment: "github" } // UNDER DEVELOPMENT
+            ];
+            const linklist = document.getElementById("link-list");
+            links.map(link => {
+                const listEl = document.createElement("li");
+                const anchorEl = document.createElement("a");
+                const deploymentEl = document.createElement("img");
+                anchorEl.href = link.link;
+                anchorEl.target = "_blank";
+                anchorEl.innerText = link.label;
+                deploymentEl.src = `./assets/img/${link.deployment}.svg`;
+                deploymentEl.alt = link.deployment;
+                anchorEl.appendChild(deploymentEl);
+                listEl.appendChild(anchorEl);
+                linklist.appendChild(listEl);
+            });
+        });
+    </script>
 </body>
 
 </html>

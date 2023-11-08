@@ -1,5 +1,5 @@
 # Bootcamp Challenges
-All of my UC Berkeley Full Stack Web Development Bootcamp Challenges consolidated under one big monorepo.
+All of my UC Berkeley Full Stack Web Development Bootcamp Challenges consolidated within a monorepo.
 
 ## GitHub Pages
 
@@ -133,8 +133,6 @@ The week 06 challenge was to create a weather dashboard that was dynamically gen
 
 ![Site Screenshot](./assets/img/readmeGenerator.png)
 
-[Video Demonstration](https://youtu.be/GUlMvpk-Ono)
-
 The week 09 challenge was to create a README generator using NodeJS with the following requirements: Use the Inquirer package to prompt the user for information about their project and then generate a README file based off of the user's input.
 
 ### Tech Stack
@@ -150,8 +148,6 @@ The week 09 challenge was to create a README generator using NodeJS with the fol
 
 ![Site Screenshot](./assets/img/svgLogoMaker.png)
 
-[Video Demonstration](https://youtu.be/CGi1bugTEi8)
-
 The week 10 challenge was to create an SVG logo maker using NodeJS with the inquirer package and the Jest Testing framework for unit tests. The application prompts the user for the shape, color, and text the logo should be made of and then generates an SVG logo based off of the user's input.
 
 ### Tech Stack
@@ -163,8 +159,6 @@ The week 10 challenge was to create an SVG logo maker using NodeJS with the inqu
 ## Module 11: Express.js Note Taker
 
 ![Site Screenshot](./assets/img/expressjsNoteTaker.png)
-
-#### [Heroku Deployment](https://young-wave-89443-5b166d2a064e.herokuapp.com/)
 
 The week 11 challenge was to create a note taking application using Express.js for the back end and connecting it to an already created front-end.
 
@@ -182,8 +176,6 @@ The week 11 challenge was to create a note taking application using Express.js f
 
 ![Site Screenshot](./assets/img/mysqlEmployeeTracker.png)
 
-[Video Demonstration](https://youtu.be/dKM0UAyHzxY)
-
 The week 12 challenge was to create a command line application that allows the user to view and manage the departments, roles, and employees in a company. The application uses NodeJS, the Inquirer package, and the MySQL package to connect to a MySQL database and perform CRUD operations on the database.
 
 ### Tech Stack
@@ -197,8 +189,6 @@ The week 12 challenge was to create a command line application that allows the u
 ## Module 13: ORM E-Commerce Back End
 
 ![Site Screenshot](./assets/img/ormEcommerceBackend.png)
-
-[Video Demonstration](https://youtu.be/t5qnrDMxy6Q)
 
 The week 13 challenge was to create a back end for an e-commerce site using express.js and sequelize to interact with a MySQL database and demonstrate the functionality of the application using Insomnia Core.
 
@@ -216,8 +206,6 @@ The week 13 challenge was to create a back end for an e-commerce site using expr
 ## Module 14: MVC Tech Blog
 
 ![Site Screenshot](./assets/img/mvcTechBlog.png)
-
-#### [Heroku Deployment](https://obscure-badlands-14784-588733df30d2.herokuapp.com/)
 
 The week 14 challenge was to create a tech blog using the MVC paradigm. 
 
@@ -239,17 +227,15 @@ The week 14 challenge was to create a tech blog using the MVC paradigm.
 
 ## Module 15/16: Project 2: Task Titan
 
-#### See GitHub Repo: [Task Titan](https://github.com/markthos/Task-Titan)
+See GitHub Repo: [Task Titan](https://github.com/Torvec/Task-Titan)
 
 ## Module 17: Regex Tutorial
 
-#### See Gist: [Regex Tutorial](https://gist.github.com/torvec/675b4465926a137bc9410f8b180f7469)
+See Gist: [Regex Tutorial](https://gist.github.com/torvec/675b4465926a137bc9410f8b180f7469)
 
 ## Module 18: NoSQL Social Network API
 
 ![Site Screenshot](./assets/img/nosqlSocialNetworkAPI.png)
-
-[Video Demonstration](https://youtu.be/KsAnFe4RiYA)
 
 The week 18 challenge was to create a back end for a social networking API using express.js and Mongoose to interact with a MongoDB database and demonstrate the functionality of the application using Insomnia.
 
@@ -263,8 +249,6 @@ The week 18 challenge was to create a back end for a social networking API using
 ## Module 19: PWA Text Editor
 
 ![Site Screenshot](./assets/img/pwaTextEditor.png)
-
-#### [Heroku Deployment](https://secret-shore-93853-24e6565e7438.herokuapp.com/)
 
 The week 19 challenge was to Progressive Web App (PWA) text editor
 
@@ -285,8 +269,6 @@ The week 19 challenge was to Progressive Web App (PWA) text editor
 ## Module 20: React Portfolio (Portfolio v2)
 
 ![Site Screenshot](./assets/img/reactPortfolio.png)
-
-[My React Portfolio](https://edward-vonschondorf.dev/)
 
 The week 20 bootcamp challenge was to create another portfolio website but this time using React. I took it a little further and went with Vite and added on Tailwind CSS just to make things more challenging.
 
@@ -311,4 +293,4 @@ UNDER DEVELOPMENT
 
 ## Module 23/24: Project 3: Wedloc
 
-#### See GitHub Repo: [Wedloc](https://github.com/markthos/wedloc)
+See GitHub Repo: [Wedloc](https://github.com/Torvec/wedloc)
