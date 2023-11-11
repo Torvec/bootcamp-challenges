@@ -8,6 +8,10 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: linear-gradient(to left top, rgb(17, 24, 39), rgb(75, 85, 99));
+  color: white;
 }
 
 img {
@@ -16,16 +20,36 @@ img {
   margin-left: 0.5rem;
 }
 
+ul {
+    border-radius: 2rem;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.75);
+    padding: 2rem;
+    background-image: radial-gradient(at left top, rgb(229, 231, 235), rgb(156, 163, 175), rgb(75, 85, 99));
+}
+
 li {
   list-style-type: none;
-  margin-bottom: 0.5rem;
-  text-transform: uppercase;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
 }
 
 a {
   text-decoration: none;
 }
 
+a:link, a:visited {
+    color: darkblue;
+}
+
 a:hover {
   text-decoration: underline;
+  color: blue;
+}
+
+
+a:active {
+    color:white;
 }

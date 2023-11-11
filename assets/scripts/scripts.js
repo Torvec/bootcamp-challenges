@@ -95,11 +95,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
   links.forEach((link) => {
     const li = document.createElement('li');
     li.innerHTML = `
-                <a href="${link.link}" target="_blank">
-                    ${link.label}
-                </a>
-                <img src="./assets/img/${link.deployment}.svg" alt="${link.deployment}" />
-            `;
+        <img src="./assets/img/${link.deployment}.svg" alt="${link.deployment}" />            
+            <a href="${link.link}" target="_blank">
+                ${link.label}
+            </a>`;
     linklist.appendChild(li);
   });
 });
