@@ -10,7 +10,11 @@ main {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-image: linear-gradient(to left top, rgb(17, 24, 39), rgb(75, 85, 99));
+  background-image: linear-gradient(
+    to left top,
+    rgb(17, 24, 39),
+    rgb(75, 85, 99)
+  );
   color: white;
 }
 
@@ -21,10 +25,10 @@ img {
 }
 
 ul {
-    border-radius: 2rem;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.75);
-    padding: 2rem;
-    background-image: radial-gradient(at left top, rgb(229, 231, 235), rgb(156, 163, 175), rgb(75, 85, 99));
+  border-radius: 2rem;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.75);
+  padding: 2rem;
+  background: rgb(75, 85, 99);
 }
 
 li {
@@ -40,16 +44,20 @@ a {
   text-decoration: none;
 }
 
-a:link, a:visited {
-    color: darkblue;
+a:link,
+a:visited {
+  color: lightcyan;
 }
 
 a:hover {
   text-decoration: underline;
-  color: blue;
+  color: white;
 }
 
-
 a:active {
-    color:white;
+  color: cyan;
+}
+
+.centered {
+  text-align: center;
 }
