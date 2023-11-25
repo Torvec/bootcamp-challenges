@@ -12,18 +12,22 @@ const initdb = async () =>
     },
   });
 
-export const putDb = async (content) => {
+export const putDb = async (id, content) => {
   const jateDb = await openDB('jate', 1);
   const tx = jateDb.transaction('jate', 'readwrite');
   const store = tx.objectStore('jate');
-  return store.put({ content });
+  const req = store.put ({ id, content });
+  const result = await req;
+  return result;
 };
 
-export const getDb = async () => {
+export const getDb = async (id) => {
   const jateDb = await openDB('jate', 1);
   const tx = jateDb.transaction('jate', 'readonly');
   const store = tx.objectStore('jate');
-  return store.getAll();
+  const req = store.get(id);
+  const result = await req;
+  return result;
 };
 
 initdb();
