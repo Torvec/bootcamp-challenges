@@ -2,7 +2,7 @@ const { User } = require("../models");
 const { signToken } = require("../utils/auth");
 const { AuthenticationError } = require("apollo-server-express");
 
-export const resolvers = {
+const resolvers = {
   Query: {
     me: async (_, args, context) => {
       if (context.user) {
@@ -53,3 +53,5 @@ export const resolvers = {
     },
   },
 };
+
+module.exports = resolvers;

@@ -6,7 +6,7 @@ import { GET_ME } from "../utils/queries";
 import Auth from "../utils/auth";
 import { removeBookId } from "../utils/localStorage";
 
-export const SavedBooks = () => {
+const SavedBooks = () => {
   const { loading, data } = useQuery(GET_ME);
   const userData = data?.me;
   const [removeBook] = useMutation(REMOVE_BOOK);
@@ -52,7 +52,7 @@ export const SavedBooks = () => {
           {userData.savedBooks.map((book) => {
             return (
               <Col md="4" key={book.bookId}>
-                <Card border="dark">
+                <Card  border="dark">
                   {book.image ? (
                     <Card.Img
                       src={book.image}
@@ -80,3 +80,5 @@ export const SavedBooks = () => {
     </>
   );
 };
+
+export default SavedBooks;
