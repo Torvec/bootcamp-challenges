@@ -35,6 +35,10 @@ const SavedBooks = () => {
     return <h2>LOADING...</h2>;
   }
 
+    if (!userData || !userData.savedBooks) {
+      return <h2>No user data or saved books found</h2>;
+    }
+
   return (
     <>
       <Container fluid className="text-light bg-dark p-5">
