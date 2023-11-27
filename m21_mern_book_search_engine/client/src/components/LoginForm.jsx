@@ -28,7 +28,6 @@ const [login] = useMutation(LOGIN_USER);
 
     try {
       const { data } = await login({ variables: userFormData });
-
       Auth.login(data.login.token);
     } catch (err) {
       console.error(err);
