@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
       link: 'https://github.com/Torvec/bootcamp-challenges/tree/main/m21_mern_book_search_engine',
       label: 'MERN Book Search Engine',
       deployment: 'github',
-    }, // UNDER DEVELOPMENT
+    },
     {
       link: 'https://github.com/Torvec/bootcamp-challenges/tree/main/m22_redux_store',
       label: 'Redux Store (Extra Credit)',

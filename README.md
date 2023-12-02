@@ -285,7 +285,27 @@ The week 20 bootcamp challenge was to create another portfolio website but this 
 
 ## Module 21: MERN Book Search Engine
 
-UNDER DEVELOPMENT
+![Site Screenshot](./assets/img/mernBookSearchEngine.png)
+
+The week 21 challenge was to create a book search engine using the MERN stack and refactoring it from using a RESTful API to a GraphQL API.
+
+### Tech Stack
+- React
+- React Router
+- Vite
+- Express.js
+- GraphQL
+- MongoDB Database
+- Mongoose
+- Apollo Server
+- Apollo Client
+- JWT
+- Bcrypt
+- Bootstrap
+
+### Starter Code
+
+[solid-broccoli](https://github.com/coding-boot-camp/solid-broccoli)
 
 ## Module 22: Redux Store (Extra Credit)
 
