@@ -8,9 +8,11 @@ import { removeBookId } from "../utils/localStorage";
 
 const SavedBooks = () => {
   const { loading, data } = useQuery(GET_ME);
-  const userData = data?.me;
+  let userData;
+  if (data) {
+    userData = data.me;
+  }
   const [removeBook] = useMutation(REMOVE_BOOK);
-
   const handleDeleteBook = async (bookId) => {
     const token = Auth.loggedIn() ? Auth.getToken() : null;
     if (!token) {
@@ -34,15 +36,13 @@ const SavedBooks = () => {
   if (loading) {
     return <h2>LOADING...</h2>;
   }
-
-    if (!userData || !userData.savedBooks) {
-      return <h2>No user data or saved books found</h2>;
-    }
-
+  if (!userData || !userData.savedBooks) {
+    return <h2>No user data or saved books found</h2>;
+  }
   return (
     <>
       <Container fluid className="text-light bg-dark p-5">
-          <h1>Viewing saved books!</h1>
+        <h1>Viewing saved books!</h1>
       </Container>
       <Container>
         <h2 className="pt-5">
@@ -56,7 +56,7 @@ const SavedBooks = () => {
           {userData.savedBooks.map((book) => {
             return (
               <Col md="4" key={book.bookId}>
-                <Card  border="dark">
+                <Card border="dark">
                   {book.image ? (
                     <Card.Img
                       src={book.image}
