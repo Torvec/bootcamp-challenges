@@ -18,7 +18,7 @@ const Cart = () => {
   // const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
 
   const cart = useSelector((state) => state.cart); // Access cart from Redux store
-  const cartOpen = useSelector((state) => state.cartOpen); // Access cartOpen from Redux store
+  const cartOpen = useSelector((state) => state.cart.cartOpen); // Access cartOpen from Redux store
   const dispatch = useDispatch();
   const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
 
@@ -114,15 +114,15 @@ const Cart = () => {
 
   return (
     <div className="cart">
-      <div className="close" onClick={toggleCart}>
+      <div className="close" onClick={() => dispatch(toggleCart())}>
         [close]
       </div>
       <h2>Shopping Cart</h2>
       {/* {state.cart.length ? ( */}
-      { cart.length ? (
+      {cart.length ? (
         <div>
           {/* {state.cart.map((item) => ( */}
-          { cart.map((item) => (
+          {cart.map((item) => (
             <CartItem key={item._id} item={item} />
           ))}
 
