@@ -6,9 +6,9 @@ import { idbPromise } from "../../utils/helpers";
 import CartItem from "../CartItem";
 import Auth from "../../utils/auth";
 // import { useStoreContext } from "../../utils/GlobalState";
+// import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from "../../utils/actions";
 import { useSelector, useDispatch } from "react-redux";
 import { toggleCart, addMultipleToCart } from "./cartSlice";
-// import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from "../../utils/actions";
 import "./style.css";
 
 const stripePromise = loadStripe("pk_test_TYooMQauvdEDq54NiTphI7jx");
@@ -17,7 +17,7 @@ const Cart = () => {
   // const [state, dispatch] = useStoreContext();
   // const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
 
-  const cart = useSelector((state) => state.cart); // Access cart from Redux store
+  const cart = useSelector((state) => state.cart.cart); // Access cart from Redux store
   const cartOpen = useSelector((state) => state.cart.cartOpen); // Access cartOpen from Redux store
   const dispatch = useDispatch();
   const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
@@ -44,7 +44,7 @@ const Cart = () => {
   useEffect(() => {
     async function getCart() {
       const cart = await idbPromise("cart", "get");
-      dispatch(addMultipleToCart(cart)); // Dispatch addMultipleToCart action
+      dispatch(addMultipleToCart([...cart])); // Dispatch addMultipleToCart action
     }
 
     if (!cart.length) {
