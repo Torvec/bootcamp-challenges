@@ -1,6 +1,6 @@
 # Module 09: README Generator
 
-![Site Screenshot](../assets/img/m09_readme_generator.jpg)
+![Site Screenshot](../public/m09_readme_generator.jpg)
 
 The week 09 challenge was to create a README generator using NodeJS with the following requirements: Use the Inquirer package to prompt the user for information about their project and then generate a README file based off of the user's input.
 
