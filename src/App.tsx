@@ -4,70 +4,56 @@ function App() {
       mod: 0,
       github:
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m00_prework_study_guide",
-      deployment:
-        "https://github.com/Torvec/bootcamp-challenges/tree/main/m00_prework_study_guide",
+      deployment: null,
       label: "Pre-Work Study Guide",
-      deploymentIcon: "github",
       imgSrc: "m00_prework_study_guide.jpg",
     },
     {
       mod: 1,
       github:
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m01_horiseon_refactor",
-      deployment:
-        "https://github.com/Torvec/bootcamp-challenges/tree/main/m01_horiseon_refactor",
+      deployment: null,
       label: "Horiseon Refactor",
-      deploymentIcon: "github",
       imgSrc: "m01_horiseon_refactor.jpg",
     },
     {
       mod: 2,
       github:
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m02_my_portfolio",
-      deployment:
-        "https://github.com/Torvec/bootcamp-challenges/tree/main/m02_my_portfolio",
+      deployment: null,
       label: "My Portfulio (Portfolio v1)",
-      deploymentIcon: "github",
       imgSrc: "m02_my_portfolio.jpg",
     },
     {
       mod: 3,
       github:
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m03_password_generator",
-      deployment:
-        "https://github.com/Torvec/bootcamp-challenges/tree/main/m03_password_generator",
+      deployment: null,
       label: "Password Generator",
-      deploymentIcon: "github",
       imgSrc: "m03_password_generator.jpg",
     },
     {
       mod: 4,
       github:
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m04_coding_quiz",
-      deployment:
-        "https://github.com/Torvec/bootcamp-challenges/tree/main/m04_coding_quiz",
+      deployment: null,
       label: "Coding Quiz",
-      deploymentIcon: "github",
       imgSrc: "m04_coding_quiz.jpg",
     },
     {
       mod: 5,
       github:
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m05_workday_scheduler",
-      deployment:
-        "https://github.com/Torvec/bootcamp-challenges/tree/main/m05_workday_scheduler",
+      deployment: null,
       label: "Workday Scheduler",
-      deploymentIcon: "github",
       imgSrc: "m05_workday_scheduler.jpg",
     },
     {
       mod: 6,
       github:
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m06_weather_dashboard",
-      deployment:
-        "https://github.com/Torvec/bootcamp-challenges/tree/main/m06_weather_dashboard",
+      deployment: null,
       label: "Weather Dashboard",
-      deploymentIcon: "github",
       imgSrc: "m06_weather_dashboard.jpg",
     },
     {
@@ -76,7 +62,6 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m09_readme_generator",
       deployment: "https://youtu.be/GUlMvpk-Ono",
       label: "README Generator",
-      deploymentIcon: "youtube",
       imgSrc: "m09_readme_generator.jpg",
     },
     {
@@ -85,7 +70,6 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m10_svg_logo_maker",
       deployment: "https://youtu.be/CGi1bugTEi8",
       label: "SVG Logo Maker",
-      deploymentIcon: "youtube",
       imgSrc: "m10_svg_logo_maker.jpg",
     },
     {
@@ -94,7 +78,6 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m11_expressjs_note_taker",
       deployment: "https://young-wave-89443-5b166d2a064e.herokuapp.com/",
       label: "Express.js Note Taker",
-      deploymentIcon: "heroku",
       imgSrc: "m11_expressjs_note_taker.jpg",
     },
     {
@@ -103,7 +86,6 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m12_mysql_employee_tracker",
       deployment: "https://youtu.be/dKM0UAyHzxY",
       label: "MySQL Employee Tracker",
-      deploymentIcon: "youtube",
       imgSrc: "m12_mysql_employee_tracker.jpg",
     },
     {
@@ -112,7 +94,6 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m13_orm_ecommerce_backend",
       deployment: "https://youtu.be/t5qnrDMxy6Q",
       label: "ORM E-Commerce Back End",
-      deploymentIcon: "youtube",
       imgSrc: "m13_orm_ecommerce_backend.jpg",
     },
     {
@@ -121,7 +102,6 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m14_mvc_tech_blog",
       deployment: "https://obscure-badlands-14784-588733df30d2.herokuapp.com/",
       label: "MVC Tech Blog",
-      deploymentIcon: "heroku",
       imgSrc: "m14_mvc_tech_blog.jpg",
     },
     {
@@ -130,7 +110,6 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m18_nosql_social_network_api",
       deployment: "https://youtu.be/KsAnFe4RiYA",
       label: "NoSQL Social Network API",
-      deploymentIcon: "youtube",
       imgSrc: "m18_nosql_social_network_api.jpg",
     },
     {
@@ -139,17 +118,14 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m19_pwa_text_editor",
       deployment: "https://secret-shore-93853-24e6565e7438.herokuapp.com/",
       label: "PWA Text Editor",
-      deploymentIcon: "heroku",
       imgSrc: "m19_pwa_text_editor.jpg",
     },
     {
       mod: 20,
       github:
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m20_react_portfolio",
-      deployment:
-        "https://github.com/Torvec/bootcamp-challenges/tree/main/m20_react_portfolio",
+      deployment: null,
       label: "React Portfolio (Portfolio v2)",
-      deploymentIcon: "cloudflare",
       imgSrc: "m20_react_portfolio.jpg",
     },
     {
@@ -158,27 +134,31 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m21_mern_book_search_engine",
       deployment: "https://immense-forest-49319-e45ef3352e1e.herokuapp.com/",
       label: "MERN Book Search Engine",
-      deploymentIcon: "heroku",
       imgSrc: "m21_mern_book_search_engine.jpg",
     },
     {
       mod: 22,
       github:
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m22_redux_store",
-      deployment:
-        "https://github.com/Torvec/bootcamp-challenges/tree/main/m22_redux_store",
+      deployment: null,
       label: "Redux Store (Extra Credit)",
-      deploymentIcon: "github",
       imgSrc: "22-state-homework-demo-01.gif",
     },
   ];
 
   const Header = () => {
     return (
-      <header className="py-8 text-center">
-        <h1 className="bg-gradient-to-r from-yellow-500 via-red-500 to-pink-500 bg-clip-text pb-4 text-6xl font-black text-transparent">
+      <header className="relative grid min-h-[75vh] place-content-center overflow-hidden py-8 text-center">
+        <div className="absolute left-1/2 top-0 z-0 size-full -translate-x-1/2 bg-[radial-gradient(circle_at_top_center,_var(--tw-gradient-stops))] from-purple-950/75 to-50%" />
+        <div className="absolute left-1/2 top-0 z-0 size-full -translate-x-1/2 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-red-500/25 to-50%" />
+        <div className="absolute left-1/2 top-0 z-0 size-full -translate-x-1/2 bg-[radial-gradient(circle_at_top_left,_var(--tw-gradient-stops))] from-blue-500/25 to-50%" />
+        <h1 className="relative z-10 bg-[radial-gradient(circle_at_top_left,_var(--tw-gradient-stops))] from-blue-500 via-purple-500 to-red-500 bg-clip-text pb-8 text-5xl font-black uppercase text-transparent md:max-w-4xl md:text-9xl">
           UC Berkeley Bootcamp Challenges
         </h1>
+        <h2 className="z-10 text-xl font-bold text-slate-500">
+          By <br />
+          Edward Vonschondorf
+        </h2>
       </header>
     );
   };
@@ -193,14 +173,14 @@ function App() {
 
   const Footer = () => {
     return (
-      <footer className="bg-green-800 py-8 text-center">
-        <p>&copy; 2023 Edward Vonschondorf</p>
+      <footer className="border-t border-white/10 bg-slate-900 py-8 text-center">
+        <p className="text-white">&copy; 2023 Edward Vonschondorf</p>
         <p>
           <a
             href="https://edward-vonschondorf.dev/"
             target="_blank"
             rel="noreferrer noopener"
-            className="font-bold text-teal-400 transition-all duration-300 ease-in-out hover:text-teal-200 active:scale-90"
+            className="font-bold text-orange-500 transition-all duration-300 ease-in-out hover:text-orange-700 active:scale-90"
           >
             edward-vonschondorf.dev
           </a>
@@ -213,7 +193,7 @@ function App() {
     imgSrc: string;
     label: string;
     github: string;
-    deployment: string;
+    deployment: string | null;
     mod: number;
   };
 
@@ -225,30 +205,37 @@ function App() {
     mod,
   }: ChallengeItemPropTypes) => {
     return (
-      <section className="grid min-h-[60vh] place-content-center  px-4 md:min-h-screen">
-        <div className="container mx-auto space-y-8 rounded-lg bg-white/50 py-8">
-          <img
-            src={imgSrc}
-            alt={label}
-            className="w-full max-w-[1000px] border-y-2 border-black object-cover object-top"
-          />
-          <div className="flex flex-col justify-between gap-8 px-4 md:flex-row md:gap-0">
-            <h2 className="text-2xl font-bold text-black">
-              <span className="text-indigo-700">MOD {mod}:</span> {label}
+      <section className="grid place-content-center px-4 py-16 md:py-64">
+        <div className="rounded-xl border border-white/10 bg-white/5 shadow-xl shadow-slate-500/25 backdrop-blur">
+          <header className="relative p-8">
+            <span className="absolute -top-6 left-1/2 grid size-12 -translate-x-1/2 place-content-center rounded-full bg-purple-900/80 text-lg font-bold text-white shadow-lg shadow-purple-950">
+              {mod}
+            </span>
+            <h2 className="text-xl font-bold text-slate-300 md:text-2xl">
+              {label}
             </h2>
-            <div className="flex flex-col gap-4 md:flex-row md:gap-8">
-              <a href={github} target="_blank" rel="noreferrer noopener">
-                <button className="w-full rounded-lg border-2 border-black/50 px-4 py-1 font-bold hover:border-blue-700 hover:text-blue-700">
-                  Repository
-                </button>
-              </a>
+          </header>
+          <main>
+            <img
+              src={imgSrc}
+              alt={label}
+              className="w-full max-w-[1000px] border-y-2 border-purple-500/90 object-cover object-top opacity-80"
+            />
+          </main>
+          <footer className="flex flex-col gap-4 p-8 text-slate-200 md:flex-row md:justify-center md:gap-8">
+            <a href={github} target="_blank" rel="noreferrer noopener">
+              <button className="w-full rounded-lg border border-slate-200/50 px-4 py-1 font-medium shadow-md shadow-slate-500/50 transition-all duration-300 ease-in-out hover:border-blue-500/50 hover:bg-white/10 hover:px-6 hover:text-blue-400 hover:shadow-lg hover:shadow-blue-500/50 active:scale-90">
+                Repository
+              </button>
+            </a>
+            {deployment && (
               <a href={deployment} target="_blank" rel="noreferrer noopener">
-                <button className="w-full rounded-lg border-2 border-black/50 px-4 py-1 font-bold hover:border-blue-700 hover:text-blue-700">
+                <button className="w-full rounded-lg border border-slate-200/50 px-4 py-1 font-medium shadow-md shadow-slate-500/50 transition-all duration-300 ease-in-out hover:border-blue-500/50 hover:bg-white/10 hover:px-6 hover:text-blue-400 hover:shadow-lg hover:shadow-blue-500/50 active:scale-90">
                   Deployment
                 </button>
               </a>
-            </div>
-          </div>
+            )}
+          </footer>
         </div>
       </section>
     );
@@ -265,7 +252,7 @@ function App() {
   };
 
   return (
-    <div className="bg-gradient-to-b from-blue-950 via-sky-700 to-cyan-500">
+    <div className="bg-slate-950 bg-[url(bg_pattern.svg)]">
       <Header />
       <Main>
         <ChallengeList />
