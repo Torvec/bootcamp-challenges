@@ -278,7 +278,7 @@ function App() {
   };
 
   return (
-    <div className="bg-slate-950 bg-[url(bg_pattern.svg)]">
+    <div className="bg-slate-950 bg-dot-pattern">
       <Header />
       <Main>
         <ChallengeList />
