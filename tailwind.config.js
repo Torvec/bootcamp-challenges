@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        "dot-pattern": 'url("bg_pattern.svg")',
+        "dot-pattern": 'url("dot_pattern.png")',
       },
     },
   },
