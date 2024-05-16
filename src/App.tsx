@@ -1,3 +1,6 @@
+import { motion, useScroll, useTransform } from "framer-motion";
+import { forwardRef, useRef, createRef } from "react";
+
 function App() {
   const challengeData = [
     {
@@ -148,14 +151,14 @@ function App() {
 
   const Header = () => {
     return (
-      <header className="relative grid min-h-[75vh] place-content-center overflow-hidden py-8 text-center">
+      <header className="relative grid min-h-screen place-content-center overflow-hidden py-8 text-center">
         <div className="absolute left-1/2 top-0 z-0 size-full -translate-x-1/2 bg-[radial-gradient(circle_at_top_center,_var(--tw-gradient-stops))] from-purple-950/75 to-50%" />
         <div className="absolute left-1/2 top-0 z-0 size-full -translate-x-1/2 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-red-500/25 to-50%" />
         <div className="absolute left-1/2 top-0 z-0 size-full -translate-x-1/2 bg-[radial-gradient(circle_at_top_left,_var(--tw-gradient-stops))] from-blue-500/25 to-50%" />
         <h1 className="relative z-10 bg-[radial-gradient(circle_at_top_left,_var(--tw-gradient-stops))] from-blue-500 via-purple-500 to-red-500 bg-clip-text pb-8 text-5xl font-black uppercase text-transparent md:max-w-4xl md:text-9xl">
           UC Berkeley Bootcamp Challenges
         </h1>
-        <h2 className="z-10 text-xl font-bold text-slate-500">
+        <h2 className="relative z-10 text-xl font-bold text-slate-500">
           By <br />
           Edward Vonschondorf
         </h2>
@@ -173,7 +176,7 @@ function App() {
 
   const Footer = () => {
     return (
-      <footer className="border-t border-white/10 bg-slate-900 py-8 text-center">
+      <footer className="bg-slate-950 py-8 text-center">
         <p className="text-white">&copy; 2023 Edward Vonschondorf</p>
         <p>
           <a
@@ -195,18 +198,26 @@ function App() {
     github: string;
     deployment: string | null;
     mod: number;
+    ref: React.RefObject<HTMLDivElement>;
   };
 
-  const ChallengeItem = ({
-    imgSrc,
-    label,
-    github,
-    deployment,
-    mod,
-  }: ChallengeItemPropTypes) => {
+  const ChallengeItem = forwardRef((props: ChallengeItemPropTypes, ref) => {
+    const { imgSrc, label, github, deployment, mod } = props;
+
+    const { scrollYProgress } = useScroll({
+      target: ref as React.RefObject<HTMLElement>,
+      offset: ["start end", "start center"], // [Div Viewport , Div Viewport]
+    });
+    const opacity = useTransform(scrollYProgress, [0.5, 1], [0.5, 1]);
+    const scale = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+
     return (
-      <section className="grid place-content-center px-4 py-16 md:py-64">
-        <div className="rounded-xl border border-white/10 bg-white/5 shadow-xl shadow-slate-500/25 backdrop-blur">
+      <section className="grid place-content-center px-4 py-32 md:py-64">
+        <motion.div
+          ref={ref as React.RefObject<HTMLDivElement>}
+          className="rounded-xl border border-white/10 bg-white/5 shadow-xl shadow-slate-500/25 backdrop-blur"
+          style={{ opacity, scale }}
+        >
           <header className="relative p-8">
             <span className="absolute -top-6 left-1/2 grid size-12 -translate-x-1/2 place-content-center rounded-full bg-purple-900/80 text-lg font-bold text-white shadow-lg shadow-purple-950">
               {mod}
@@ -219,7 +230,7 @@ function App() {
             <img
               src={imgSrc}
               alt={label}
-              className="w-full max-w-[1000px] border-y-2 border-purple-500/90 object-cover object-top opacity-80"
+              className="w-full border-y-2 border-purple-500/90 object-cover object-top opacity-80"
             />
           </main>
           <footer className="flex flex-col gap-4 p-8 text-slate-200 md:flex-row md:justify-center md:gap-8">
@@ -236,18 +247,33 @@ function App() {
               </a>
             )}
           </footer>
-        </div>
+        </motion.div>
       </section>
     );
-  };
+  });
 
   const ChallengeList = () => {
+    const refs = useRef(challengeData.map(() => createRef<HTMLDivElement>()));
     return (
       <>
         {challengeData.map((challenge, index) => (
-          <ChallengeItem key={index} {...challenge} />
+          <ChallengeItem key={index} ref={refs.current[index]} {...challenge} />
         ))}
       </>
+    );
+  };
+
+  const End = () => {
+    return (
+      <section className="relative grid place-content-center py-32 md:py-64 border-b border-white/10">
+        <div className="absolute left-1/2 bottom-0 z-0 size-full -translate-x-1/2 bg-[radial-gradient(circle_at_bottom_center,_var(--tw-gradient-stops))] from-orange-500/25 to-50%" />
+        <h3
+          className="relative z-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))]
+            from-amber-400  via-yellow-500 to-orange-600 bg-clip-text pb-8 text-5xl font-black uppercase text-transparent md:max-w-4xl md:text-9xl"
+        >
+          The End
+        </h3>
+      </section>
     );
   };
 
@@ -256,6 +282,7 @@ function App() {
       <Header />
       <Main>
         <ChallengeList />
+        <End />
       </Main>
       <Footer />
     </div>
