@@ -9,7 +9,7 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m00_prework_study_guide",
       deployment: null,
       label: "Pre-Work Study Guide",
-      imgSrc: "m00_prework_study_guide.jpg",
+      imgSrc: "/img/m00_prework_study_guide.jpg",
     },
     {
       mod: 1,
@@ -17,7 +17,7 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m01_horiseon_refactor",
       deployment: null,
       label: "Horiseon Refactor",
-      imgSrc: "m01_horiseon_refactor.jpg",
+      imgSrc: "/img/m01_horiseon_refactor.jpg",
     },
     {
       mod: 2,
@@ -25,7 +25,7 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m02_my_portfolio",
       deployment: null,
       label: "My Portfulio (Portfolio v1)",
-      imgSrc: "m02_my_portfolio.jpg",
+      imgSrc: "/img/m02_my_portfolio.jpg",
     },
     {
       mod: 3,
@@ -33,7 +33,7 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m03_password_generator",
       deployment: null,
       label: "Password Generator",
-      imgSrc: "m03_password_generator.jpg",
+      imgSrc: "/img/m03_password_generator.jpg",
     },
     {
       mod: 4,
@@ -41,7 +41,7 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m04_coding_quiz",
       deployment: null,
       label: "Coding Quiz",
-      imgSrc: "m04_coding_quiz.jpg",
+      imgSrc: "/img/m04_coding_quiz.jpg",
     },
     {
       mod: 5,
@@ -49,7 +49,7 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m05_workday_scheduler",
       deployment: null,
       label: "Workday Scheduler",
-      imgSrc: "m05_workday_scheduler.jpg",
+      imgSrc: "/img/m05_workday_scheduler.jpg",
     },
     {
       mod: 6,
@@ -57,7 +57,7 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m06_weather_dashboard",
       deployment: null,
       label: "Weather Dashboard",
-      imgSrc: "m06_weather_dashboard.jpg",
+      imgSrc: "/img/m06_weather_dashboard.jpg",
     },
     {
       mod: 9,
@@ -65,7 +65,7 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m09_readme_generator",
       deployment: "https://youtu.be/GUlMvpk-Ono",
       label: "README Generator",
-      imgSrc: "m09_readme_generator.jpg",
+      imgSrc: "/img/m09_readme_generator.jpg",
     },
     {
       mod: 10,
@@ -73,7 +73,7 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m10_svg_logo_maker",
       deployment: "https://youtu.be/CGi1bugTEi8",
       label: "SVG Logo Maker",
-      imgSrc: "m10_svg_logo_maker.jpg",
+      imgSrc: "/img/m10_svg_logo_maker.jpg",
     },
     {
       mod: 11,
@@ -81,7 +81,7 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m11_expressjs_note_taker",
       deployment: "https://young-wave-89443-5b166d2a064e.herokuapp.com/",
       label: "Express.js Note Taker",
-      imgSrc: "m11_expressjs_note_taker.jpg",
+      imgSrc: "/img/m11_expressjs_note_taker.jpg",
     },
     {
       mod: 12,
@@ -89,7 +89,7 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m12_mysql_employee_tracker",
       deployment: "https://youtu.be/dKM0UAyHzxY",
       label: "MySQL Employee Tracker",
-      imgSrc: "m12_mysql_employee_tracker.jpg",
+      imgSrc: "/img/m12_mysql_employee_tracker.jpg",
     },
     {
       mod: 13,
@@ -97,7 +97,7 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m13_orm_ecommerce_backend",
       deployment: "https://youtu.be/t5qnrDMxy6Q",
       label: "ORM E-Commerce Back End",
-      imgSrc: "m13_orm_ecommerce_backend.jpg",
+      imgSrc: "/img/m13_orm_ecommerce_backend.jpg",
     },
     {
       mod: 14,
@@ -105,7 +105,7 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m14_mvc_tech_blog",
       deployment: "https://obscure-badlands-14784-588733df30d2.herokuapp.com/",
       label: "MVC Tech Blog",
-      imgSrc: "m14_mvc_tech_blog.jpg",
+      imgSrc: "/img/m14_mvc_tech_blog.jpg",
     },
     {
       mod: 18,
@@ -113,7 +113,7 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m18_nosql_social_network_api",
       deployment: "https://youtu.be/KsAnFe4RiYA",
       label: "NoSQL Social Network API",
-      imgSrc: "m18_nosql_social_network_api.jpg",
+      imgSrc: "/img/m18_nosql_social_network_api.jpg",
     },
     {
       mod: 19,
@@ -121,7 +121,7 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m19_pwa_text_editor",
       deployment: "https://secret-shore-93853-24e6565e7438.herokuapp.com/",
       label: "PWA Text Editor",
-      imgSrc: "m19_pwa_text_editor.jpg",
+      imgSrc: "/img/m19_pwa_text_editor.jpg",
     },
     {
       mod: 20,
@@ -129,7 +129,7 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m20_react_portfolio",
       deployment: null,
       label: "React Portfolio (Portfolio v2)",
-      imgSrc: "m20_react_portfolio.jpg",
+      imgSrc: "/img/m20_react_portfolio.jpg",
     },
     {
       mod: 21,
@@ -137,7 +137,7 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m21_mern_book_search_engine",
       deployment: "https://immense-forest-49319-e45ef3352e1e.herokuapp.com/",
       label: "MERN Book Search Engine",
-      imgSrc: "m21_mern_book_search_engine.jpg",
+      imgSrc: "/img/m21_mern_book_search_engine.jpg",
     },
     {
       mod: 22,
@@ -145,7 +145,7 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m22_redux_store",
       deployment: null,
       label: "Redux Store (Extra Credit)",
-      imgSrc: "22-state-homework-demo-01.gif",
+      imgSrc: "/img/22-state-homework-demo-01.gif",
     },
   ];
 
