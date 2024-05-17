@@ -1,6 +1,6 @@
 # Module 11: Express.js Note Taker
 
-![Site Screenshot](../public/m11_expressjs_note_taker.jpg)
+![Site Screenshot](../public/img/m11_expressjs_note_taker.jpg)
 
 The week 11 challenge was to create a note taking application using Express.js for the back end and connecting it to an already created front-end.
 

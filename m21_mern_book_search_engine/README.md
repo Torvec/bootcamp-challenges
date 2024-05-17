@@ -1,6 +1,6 @@
 # Module 21: MERN Book Search Engine
 
-![Site Screenshot](../public/m21_mern_book_search_engine.jpg)
+![Site Screenshot](../public/img/m21_mern_book_search_engine.jpg)
 
 The week 21 challenge was to create a book search engine using the MERN stack and refactoring it from using a RESTful API to a GraphQL API.
 

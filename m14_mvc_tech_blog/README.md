@@ -1,6 +1,6 @@
 # Module 14: MVC Tech Blog
 
-![Site Screenshot](../public/m14_mvc_tech_blog.jpg)
+![Site Screenshot](../public/img/m14_mvc_tech_blog.jpg)
 
 The week 14 challenge was to create a tech blog using the MVC paradigm. 
 

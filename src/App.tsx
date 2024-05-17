@@ -151,10 +151,15 @@ function App() {
 
   const Header = () => {
     return (
-      <header className="relative grid min-h-screen place-content-center overflow-hidden py-8 text-center">
+      <header className="relative grid min-h-screen place-content-center gap-12 overflow-hidden py-8 text-center">
         <div className="absolute left-1/2 top-0 z-0 size-full -translate-x-1/2 bg-[radial-gradient(circle_at_top_center,_var(--tw-gradient-stops))] from-purple-950/75 to-50%" />
         <div className="absolute left-1/2 top-0 z-0 size-full -translate-x-1/2 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-red-500/25 to-50%" />
         <div className="absolute left-1/2 top-0 z-0 size-full -translate-x-1/2 bg-[radial-gradient(circle_at_top_left,_var(--tw-gradient-stops))] from-blue-500/25 to-50%" />
+        <img
+          src="/img/favicon.png"
+          alt="Icon"
+          className="mx-auto size-12 shadow-lg shadow-slate-200/50"
+        />
         <h1 className="relative z-10 bg-[radial-gradient(circle_at_top_left,_var(--tw-gradient-stops))] from-blue-500 via-purple-500 to-red-500 bg-clip-text pb-8 text-5xl font-black uppercase text-transparent md:max-w-4xl md:text-9xl">
           UC Berkeley Bootcamp Challenges
         </h1>
@@ -209,7 +214,7 @@ function App() {
       offset: ["start end", "start center"], // [Div Viewport , Div Viewport]
     });
     const opacity = useTransform(scrollYProgress, [0.5, 1], [0.5, 1]);
-    const scale = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+    const scale = useTransform(scrollYProgress, [0, 1], [0.9, 1]);
 
     return (
       <section className="grid place-content-center px-4 py-32 md:py-64">
@@ -230,18 +235,18 @@ function App() {
             <img
               src={imgSrc}
               alt={label}
-              className="w-full border-y-2 border-purple-500/90 object-cover object-top opacity-80"
+              className="w-full border-y-2 border-purple-500/90 object-cover object-top opacity-90"
             />
           </main>
           <footer className="flex flex-col gap-4 p-8 text-slate-200 md:flex-row md:justify-center md:gap-8">
             <a href={github} target="_blank" rel="noreferrer noopener">
-              <button className="w-full rounded-lg border border-slate-200/50 px-4 py-1 font-medium shadow-md shadow-slate-500/50 transition-all duration-300 ease-in-out hover:border-blue-500/50 hover:bg-white/10 hover:px-6 hover:text-blue-400 hover:shadow-lg hover:shadow-blue-500/50 active:scale-90">
+              <button className="w-full rounded-lg border border-slate-200/50 px-4 py-1 font-medium shadow-md shadow-slate-500/50 transition-all duration-300 ease-in-out hover:border-blue-500/50 hover:bg-white/10 hover:px-6 hover:text-blue-400 hover:shadow-lg hover:shadow-blue-500/50 active:scale-90 active:shadow-none">
                 Repository
               </button>
             </a>
             {deployment && (
               <a href={deployment} target="_blank" rel="noreferrer noopener">
-                <button className="w-full rounded-lg border border-slate-200/50 px-4 py-1 font-medium shadow-md shadow-slate-500/50 transition-all duration-300 ease-in-out hover:border-blue-500/50 hover:bg-white/10 hover:px-6 hover:text-blue-400 hover:shadow-lg hover:shadow-blue-500/50 active:scale-90">
+                <button className="w-full rounded-lg border border-slate-200/50 px-4 py-1 font-medium shadow-md shadow-slate-500/50 transition-all duration-300 ease-in-out hover:border-blue-500/50 hover:bg-white/10 hover:px-6 hover:text-blue-400 hover:shadow-lg hover:shadow-blue-500/50 active:scale-90 active:shadow-none">
                   Deployment
                 </button>
               </a>
@@ -265,20 +270,37 @@ function App() {
 
   const End = () => {
     return (
-      <section className="relative grid place-content-center py-32 md:py-64 border-b border-white/10">
-        <div className="absolute left-1/2 bottom-0 z-0 size-full -translate-x-1/2 bg-[radial-gradient(circle_at_bottom_center,_var(--tw-gradient-stops))] from-orange-500/25 to-50%" />
-        <h3
-          className="relative z-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))]
-            from-amber-400  via-yellow-500 to-orange-600 bg-clip-text pb-8 text-5xl font-black uppercase text-transparent md:max-w-4xl md:text-9xl"
+      <section className="relative grid place-content-center border-b border-white/10 py-32 md:py-64">
+        <div className="absolute bottom-0 left-1/2 z-0 size-full -translate-x-1/2 bg-[radial-gradient(circle_at_bottom_center,_var(--tw-gradient-stops))] from-orange-500/25 to-50%" />
+        <button
+          className="relative z-10 rounded-xl bg-gradient-to-t from-amber-400  via-yellow-500 to-orange-600 px-6 py-2 font-bold text-black shadow-lg shadow-orange-500/50 transition-all duration-300 ease-in-out hover:px-10 hover:text-black/75 hover:shadow-orange-500/75 active:scale-90"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
-          The End
-        </h3>
+          Back to Top
+        </button>
       </section>
+    );
+  };
+
+  const ProgressBar = () => {
+    const { scrollYProgress } = useScroll();
+    const scaleX = scrollYProgress;
+    const backgroundColor = useTransform(
+      scrollYProgress,
+      [0, 0.25, 0.5, 0.75, 1],
+      ["#3b82f6", "#a855f7", "#ef4444", "#f97316", "#f59e0b"], // blue-500, purple-500, red-500, orange-500, yellow-500
+    );
+    return (
+      <motion.div
+        className="fixed inset-0 z-20 h-1 w-full opacity-75"
+        style={{ scaleX, backgroundColor, transformOrigin: "left" }}
+      />
     );
   };
 
   return (
     <div className="bg-slate-950 bg-dot-pattern">
+      <ProgressBar />
       <Header />
       <Main>
         <ChallengeList />
