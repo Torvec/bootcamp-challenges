@@ -9,7 +9,8 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m00_prework_study_guide",
       deployment: null,
       label: "Pre-Work Study Guide",
-      imgSrc: "/img/m00_prework_study_guide.jpg",
+      srcType: "image",
+      src: "/img/m00_prework_study_guide.jpg",
     },
     {
       mod: 1,
@@ -17,7 +18,8 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m01_horiseon_refactor",
       deployment: null,
       label: "Horiseon Refactor",
-      imgSrc: "/img/m01_horiseon_refactor.jpg",
+      srcType: "image",
+      src: "/img/m01_horiseon_refactor.jpg",
     },
     {
       mod: 2,
@@ -25,7 +27,8 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m02_my_portfolio",
       deployment: null,
       label: "My Portfulio (Portfolio v1)",
-      imgSrc: "/img/m02_my_portfolio.jpg",
+      srcType: "image",
+      src: "/img/m02_my_portfolio.jpg",
     },
     {
       mod: 3,
@@ -33,7 +36,8 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m03_password_generator",
       deployment: null,
       label: "Password Generator",
-      imgSrc: "/img/m03_password_generator.jpg",
+      srcType: "image",
+      src: "/img/m03_password_generator.jpg",
     },
     {
       mod: 4,
@@ -41,7 +45,8 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m04_coding_quiz",
       deployment: null,
       label: "Coding Quiz",
-      imgSrc: "/img/m04_coding_quiz.jpg",
+      srcType: "image",
+      src: "/img/m04_coding_quiz.jpg",
     },
     {
       mod: 5,
@@ -49,7 +54,8 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m05_workday_scheduler",
       deployment: null,
       label: "Workday Scheduler",
-      imgSrc: "/img/m05_workday_scheduler.jpg",
+      srcType: "image",
+      src: "/img/m05_workday_scheduler.jpg",
     },
     {
       mod: 6,
@@ -57,7 +63,8 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m06_weather_dashboard",
       deployment: null,
       label: "Weather Dashboard",
-      imgSrc: "/img/m06_weather_dashboard.jpg",
+      srcType: "image",
+      src: "/img/m06_weather_dashboard.jpg",
     },
     {
       mod: 9,
@@ -65,7 +72,8 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m09_readme_generator",
       deployment: "https://youtu.be/GUlMvpk-Ono",
       label: "README Generator",
-      imgSrc: "/img/m09_readme_generator.jpg",
+      srcType: "video",
+      src: "https://www.youtube.com/embed/GUlMvpk-Ono?si=PNc8bGdrny7QRToR",
     },
     {
       mod: 10,
@@ -73,7 +81,8 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m10_svg_logo_maker",
       deployment: "https://youtu.be/CGi1bugTEi8",
       label: "SVG Logo Maker",
-      imgSrc: "/img/m10_svg_logo_maker.jpg",
+      srcType: "video",
+      src: "https://www.youtube.com/embed/CGi1bugTEi8?si=uC6Qr6IkbTh4cGC1",
     },
     {
       mod: 11,
@@ -81,7 +90,8 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m11_expressjs_note_taker",
       deployment: "https://young-wave-89443-5b166d2a064e.herokuapp.com/",
       label: "Express.js Note Taker",
-      imgSrc: "/img/m11_expressjs_note_taker.jpg",
+      srcType: "image",
+      src: "/img/m11_expressjs_note_taker.jpg",
     },
     {
       mod: 12,
@@ -89,7 +99,8 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m12_mysql_employee_tracker",
       deployment: "https://youtu.be/dKM0UAyHzxY",
       label: "MySQL Employee Tracker",
-      imgSrc: "/img/m12_mysql_employee_tracker.jpg",
+      srcType: "video",
+      src: "https://www.youtube.com/embed/dKM0UAyHzxY?si=sDoQh9vlWxJpODMP",
     },
     {
       mod: 13,
@@ -97,7 +108,8 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m13_orm_ecommerce_backend",
       deployment: "https://youtu.be/t5qnrDMxy6Q",
       label: "ORM E-Commerce Back End",
-      imgSrc: "/img/m13_orm_ecommerce_backend.jpg",
+      srcType: "video",
+      src: "https://www.youtube.com/embed/t5qnrDMxy6Q?si=L1hCtYN44Y_octp3",
     },
     {
       mod: 14,
@@ -105,7 +117,8 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m14_mvc_tech_blog",
       deployment: "https://obscure-badlands-14784-588733df30d2.herokuapp.com/",
       label: "MVC Tech Blog",
-      imgSrc: "/img/m14_mvc_tech_blog.jpg",
+      srcType: "image",
+      src: "/img/m14_mvc_tech_blog.jpg",
     },
     {
       mod: 18,
@@ -113,7 +126,8 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m18_nosql_social_network_api",
       deployment: "https://youtu.be/KsAnFe4RiYA",
       label: "NoSQL Social Network API",
-      imgSrc: "/img/m18_nosql_social_network_api.jpg",
+      srcType: "video",
+      src: "https://www.youtube.com/embed/KsAnFe4RiYA?si=aosTh7DfEcXUxPU2",
     },
     {
       mod: 19,
@@ -121,7 +135,8 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m19_pwa_text_editor",
       deployment: "https://secret-shore-93853-24e6565e7438.herokuapp.com/",
       label: "PWA Text Editor",
-      imgSrc: "/img/m19_pwa_text_editor.jpg",
+      srcType: "image",
+      src: "/img/m19_pwa_text_editor.jpg",
     },
     {
       mod: 20,
@@ -129,7 +144,8 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m20_react_portfolio",
       deployment: null,
       label: "React Portfolio (Portfolio v2)",
-      imgSrc: "/img/m20_react_portfolio.jpg",
+      srcType: "image",
+      src: "/img/m20_react_portfolio.jpg",
     },
     {
       mod: 21,
@@ -137,7 +153,8 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m21_mern_book_search_engine",
       deployment: "https://immense-forest-49319-e45ef3352e1e.herokuapp.com/",
       label: "MERN Book Search Engine",
-      imgSrc: "/img/m21_mern_book_search_engine.jpg",
+      srcType: "image",
+      src: "/img/m21_mern_book_search_engine.jpg",
     },
     {
       mod: 22,
@@ -145,7 +162,8 @@ function App() {
         "https://github.com/Torvec/bootcamp-challenges/tree/main/m22_redux_store",
       deployment: null,
       label: "Redux Store (Extra Credit)",
-      imgSrc: "/img/22-state-homework-demo-01.gif",
+      srcType: "image",
+      src: "/img/22-state-homework-demo-01.gif",
     },
   ];
 
@@ -198,7 +216,8 @@ function App() {
   };
 
   type ChallengeItemPropTypes = {
-    imgSrc: string;
+    src: string;
+    srcType: string;
     label: string;
     github: string;
     deployment: string | null;
@@ -207,7 +226,7 @@ function App() {
   };
 
   const ChallengeItem = forwardRef((props: ChallengeItemPropTypes, ref) => {
-    const { imgSrc, label, github, deployment, mod } = props;
+    const { src, srcType, label, github, deployment, mod } = props;
 
     const { scrollYProgress } = useScroll({
       target: ref as React.RefObject<HTMLElement>,
@@ -217,10 +236,10 @@ function App() {
     const scale = useTransform(scrollYProgress, [0, 1], [0.9, 1]);
 
     return (
-      <section className="grid place-content-center px-4 py-32 md:py-64">
+      <section className="px-4 py-32 md:py-64">
         <motion.div
           ref={ref as React.RefObject<HTMLDivElement>}
-          className="rounded-xl border border-white/10 bg-white/5 shadow-xl shadow-slate-500/25 backdrop-blur"
+          className="container mx-auto rounded-xl border border-white/10 bg-white/5 shadow-xl shadow-slate-500/25 backdrop-blur"
           style={{ opacity, scale }}
         >
           <header className="relative p-8">
@@ -231,12 +250,26 @@ function App() {
               {label}
             </h2>
           </header>
-          <main>
-            <img
-              src={imgSrc}
-              alt={label}
-              className="w-full border-y-2 border-purple-500/90 object-cover object-top opacity-90"
-            />
+          <main className="bg-black">
+            {srcType === "video" && (
+              <div className="w-full border-y-2 border-purple-500/90">
+                <iframe
+                  className="aspect-video h-full w-full"
+                  src={src}
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            )}
+            {srcType === "image" && (
+              <img
+                src={src}
+                alt={label}
+                className="w-full border-y-2 border-purple-500/90 object-cover object-top opacity-90"
+              />
+            )}
           </main>
           <footer className="flex flex-col gap-4 p-8 text-slate-200 md:flex-row md:justify-center md:gap-8">
             <a href={github} target="_blank" rel="noreferrer noopener">
